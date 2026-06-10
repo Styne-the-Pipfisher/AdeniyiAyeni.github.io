@@ -6,11 +6,20 @@
 <title>Adeniyi Ayeni | Data Analyst Portfolio</title>
 
 <style>
+:root{
+  --bg:#0a0f1c;
+  --card:rgba(255,255,255,0.04);
+  --border:rgba(255,255,255,0.08);
+  --text:#e5e7eb;
+  --muted:#a1a1aa;
+  --accent:#3b82f6;
+}
+
 body{
   margin:0;
   font-family:Segoe UI, sans-serif;
-  background:#0b1220;
-  color:#e5e7eb;
+  background:var(--bg);
+  color:var(--text);
   line-height:1.6;
 }
 
@@ -18,28 +27,30 @@ body{
 nav{
   position:sticky;
   top:0;
-  background:rgba(15,23,42,0.85);
+  background:rgba(10,15,28,0.7);
   backdrop-filter:blur(12px);
   display:flex;
   justify-content:center;
-  padding:15px;
+  gap:25px;
+  padding:14px;
+  border-bottom:1px solid var(--border);
   z-index:1000;
-  border-bottom:1px solid rgba(255,255,255,0.05);
 }
 nav a{
-  color:#e5e7eb;
-  margin:0 18px;
+  color:var(--text);
   text-decoration:none;
-  font-weight:600;
-  font-size:14px;
+  font-size:13px;
+  opacity:0.8;
 }
-nav a:hover{color:#60a5fa}
+nav a:hover{opacity:1;color:var(--accent)}
 
-/* HERO (UPGRADED LIKE ELITE PORTFOLIOS) */
+/* HERO */
 header{
+  padding:140px 20px 100px;
   text-align:center;
-  padding:130px 20px;
-  background:radial-gradient(circle at top, #1e3a8a, #0b1220 60%);
+  background:
+    radial-gradient(circle at top, #1e3a8a, transparent 60%),
+    radial-gradient(circle at bottom, #0f172a, transparent 60%);
 }
 header h1{
   font-size:64px;
@@ -47,10 +58,10 @@ header h1{
   letter-spacing:-1px;
 }
 header p{
-  font-size:18px;
-  opacity:0.85;
-  max-width:600px;
-  margin:10px auto 0;
+  max-width:650px;
+  margin:12px auto 0;
+  color:var(--muted);
+  font-size:16px;
 }
 
 /* SECTIONS */
@@ -61,25 +72,32 @@ section{
 }
 
 h2{
-  font-size:22px;
-  border-left:4px solid #3b82f6;
-  padding-left:12px;
+  font-size:18px;
+  letter-spacing:1px;
+  text-transform:uppercase;
   margin-bottom:25px;
+  color:#cbd5e1;
 }
 
-/* CARDS (MORE PREMIUM LOOK) */
+/* CARD */
 .card{
-  background:rgba(255,255,255,0.04);
-  border:1px solid rgba(255,255,255,0.08);
-  padding:24px;
+  background:var(--card);
+  border:1px solid var(--border);
   border-radius:16px;
-  margin-bottom:22px;
-  transition:0.3s ease;
+  padding:22px;
+  margin-bottom:20px;
+  transition:0.25s ease;
 }
 .card:hover{
   transform:translateY(-6px);
-  border-color:#3b82f6;
-  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+  border-color:var(--accent);
+}
+
+/* GRID PROJECTS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:18px;
 }
 
 /* SKILLS */
@@ -89,34 +107,43 @@ h2{
   gap:10px;
 }
 .skill{
-  background:#1e293b;
-  padding:8px 14px;
+  background:#111827;
+  padding:7px 12px;
   border-radius:999px;
-  font-size:13px;
+  font-size:12px;
+  color:#cbd5e1;
+  border:1px solid var(--border);
 }
 
 /* BUTTON */
 .btn{
   display:inline-block;
   margin-top:12px;
-  padding:10px 14px;
-  background:#3b82f6;
+  padding:9px 13px;
+  background:var(--accent);
   color:white;
   border-radius:10px;
   text-decoration:none;
-  font-size:14px;
-  transition:0.2s;
+  font-size:13px;
 }
 .btn:hover{background:#2563eb}
+
+/* IMAGE */
+img{
+  width:100%;
+  border-radius:12px;
+  margin-top:12px;
+  border:1px solid var(--border);
+}
 
 /* FOOTER */
 footer{
   text-align:center;
-  padding:40px;
-  background:#020617;
+  padding:50px;
+  font-size:12px;
+  color:var(--muted);
+  border-top:1px solid var(--border);
   margin-top:60px;
-  font-size:13px;
-  opacity:0.7;
 }
 </style>
 </head>
@@ -132,21 +159,15 @@ footer{
 
 <header>
 <h1>Adeniyi Ayeni</h1>
-<p>Data Analyst | Power BI | SQL | Excel | Turning Data Into Business Decisions</p>
+<p>Data Analyst specializing in product analytics, healthcare insights, and business intelligence. I turn raw data into decisions that drive growth.</p>
 </header>
 
 <section id="about">
-<h2>About Me</h2>
+<h2>About</h2>
 <div class="card">
-<p>
-I am a Data Analyst focused on business intelligence, healthcare analytics, and emerging data trends. I transform raw datasets into meaningful insights that support decision-making, performance tracking, and business growth.
-</p>
-<p>
-My experience includes data cleaning, exploratory analysis, KPI development, and dashboard creation using Power BI, Excel, and SQL. I enjoy uncovering patterns that help organizations make smarter decisions.
-</p>
-<p>
-Currently, I am building advanced analytics projects across business, healthcare, and financial data, with a focus on storytelling and real-world impact.
-</p>
+I am a data analyst focused on building end-to-end analytics solutions that help businesses understand performance, customer behavior, and operational efficiency.
+<br><br>
+I work across SQL, Excel, and Power BI to clean data, build KPIs, and design dashboards that support decision-making.
 </div>
 </section>
 
@@ -154,42 +175,49 @@ Currently, I am building advanced analytics projects across business, healthcare
 <h2>Skills</h2>
 <div class="card skills">
 <div class="skill">SQL</div>
-<div class="skill">Excel</div>
 <div class="skill">Power BI</div>
+<div class="skill">Excel</div>
 <div class="skill">DAX</div>
-<div class="skill">Data Cleaning</div>
-<div class="skill">Data Visualization</div>
-<div class="skill">Business Analysis</div>
+<div class="skill">Data Modeling</div>
+<div class="skill">KPI Design</div>
+<div class="skill">Data Storytelling</div>
 </div>
 </section>
 
 <section id="projects">
 <h2>Projects</h2>
 
+<div class="grid">
+
 <div class="card">
-<h3>🎧 Spotify Listening Behaviour Analysis</h3>
-<p>Analyzed user engagement patterns, skip rates, and listening behavior to improve recommendation understanding.</p>
+<h3>Spotify User Analytics</h3>
+<p>Analyzed engagement, skip behavior, and listening patterns to understand user retention drivers.</p>
+<img src="spotify-dashboard.png">
 <a class="btn" href="spotify.html">View Case Study</a>
 </div>
 
 <div class="card">
-<h3>🏥 Healthcare Expenditure Analysis</h3>
-<p>Explored global healthcare spending disparities across income groups and countries.</p>
+<h3>Healthcare Cost Analysis</h3>
+<p>Studied global healthcare spending disparities across income groups and regions.</p>
+<img src="healthcare.png">
 <a class="btn" href="healthcare.html">View Case Study</a>
 </div>
 
 <div class="card">
-<h3>🚗 Insurance Risk Analysis</h3>
-<p>Identified high-risk customer segments using claims frequency and demographic patterns.</p>
+<h3>Insurance Risk Modeling</h3>
+<p>Identified high-risk customer segments using claims frequency and demographic factors.</p>
+<img src="insurance.png">
 <a class="btn" href="insurance.html">View Case Study</a>
 </div>
 
 <div class="card">
-<h3>🛒 E-commerce Performance Analysis</h3>
-<p>Evaluated product performance, discount impact, and profitability trends.</p>
+<h3>E-commerce Performance</h3>
+<p>Evaluated revenue drivers, discount impact, and product profitability trends.</p>
+<img src="ecommerce.png">
 <a class="btn" href="ecommerce.html">View Case Study</a>
 </div>
 
+</div>
 </section>
 
 <section id="contact">
@@ -201,7 +229,7 @@ LinkedIn: linkedin.com/in/yourprofile
 </section>
 
 <footer>
-© 2026 Adeniyi Ayeni | Data Analyst Portfolio
+© 2026 Adeniyi Ayeni — Data Analytics Portfolio
 </footer>
 
 </body>
