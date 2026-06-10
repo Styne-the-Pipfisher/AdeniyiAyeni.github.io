@@ -1,46 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Spotify Case Study</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spotify Case Study</title>
 
-  <style>
-    body { font-family: Arial; margin:0; background:#f5f7fb; }
-    header { background:#0f172a; color:white; padding:60px; text-align:center; }
-    section { max-width:900px; margin:auto; padding:40px; }
-    .card { background:white; padding:20px; margin-bottom:20px; border-radius:10px; }
-    .btn { display:inline-block; padding:10px 14px; background:#2563eb; color:white; text-decoration:none; border-radius:8px; }
-    img { width:100%; border-radius:10px; margin-top:10px; }
-  </style>
+<style>
+body{
+  margin:0;
+  font-family:Segoe UI, sans-serif;
+  background:#0b1220;
+  color:#e5e7eb;
+}
+
+header{
+  background:linear-gradient(135deg,#1e3a8a,#0f172a);
+  text-align:center;
+  padding:90px 20px;
+}
+
+header h1{
+  margin:0;
+  font-size:42px;
+}
+
+header p{
+  opacity:0.8;
+  margin-top:10px;
+}
+
+section{
+  max-width:900px;
+  margin:auto;
+  padding:50px 20px;
+}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  padding:20px;
+  border-radius:12px;
+  margin-bottom:20px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#3b82f6;
+}
+
+img{
+  width:100%;
+  border-radius:10px;
+  margin-top:10px;
+}
+
+a{
+  color:#60a5fa;
+  text-decoration:none;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 14px;
+  background:#3b82f6;
+  color:white;
+  border-radius:8px;
+}
+.btn:hover{
+  background:#2563eb;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>Spotify Listening Behavior Analysis</h1>
+<h1>Spotify Listening Behavior Analysis</h1>
+<p>Data Analytics Case Study | Power BI Dashboard</p>
 </header>
 
 <section>
 
-  <div class="card">
-    <h2>Problem</h2>
-    <p>Analyze user listening behavior and engagement patterns.</p>
-  </div>
+<!-- PROBLEM -->
+<div class="card">
+<h2>📌 Problem Statement</h2>
+<p>
+Spotify wanted to understand how users interact with music on the platform — specifically:
+why users skip songs, when engagement is highest, and what type of content keeps users listening longer.
+</p>
+<p>
+The business problem was a lack of clarity around user engagement behavior, which affected recommendation quality and content strategy.
+</p>
+</div>
 
-  <div class="card">
-    <h2>Insights</h2>
-    <ul>
-      <li>High skip rates in certain genres</li>
-      <li>Peak listening hours identified</li>
-      <li>Top engaging artists discovered</li>
-    </ul>
-  </div>
+<!-- OBJECTIVE -->
+<div class="card">
+<h2>🎯 Objective</h2>
+<p>
+To analyze user listening behavior and identify patterns that influence engagement, retention, and song completion rates.
+</p>
+</div>
 
-  <div class="card">
-    <h2>Dashboard</h2>
-    <img src="spotify.png">
-  </div>
+<!-- DATA -->
+<div class="card">
+<h2>📊 Data Used</h2>
+<ul>
+<li>Listening history dataset</li>
+<li>Track names and artists</li>
+<li>Play duration</li>
+<li>Skip events</li>
+<li>Listening timestamps</li>
+</ul>
+</div>
 
-  <a class="btn" href="index.html">Back Home</a>
+<!-- APPROACH -->
+<div class="card">
+<h2>🔍 Analysis Approach</h2>
+<ul>
+<li>Cleaned and structured raw listening data</li>
+<li>Created KPIs: skip rate, completion rate, total listens</li>
+<li>Grouped songs by genre, artist, and time of day</li>
+<li>Built Power BI dashboard for visualization</li>
+</ul>
+</div>
+
+<!-- INSIGHTS -->
+<div class="card">
+<h2>💡 Key Insights</h2>
+<ul>
+<li>Afrobeat songs had the lowest skip rate, showing higher engagement</li>
+<li>Peak listening hours were between 7PM – 11PM</li>
+<li>Short-duration tracks had higher completion rates</li>
+<li>New or unfamiliar artists had significantly higher skip rates</li>
+</ul>
+</div>
+
+<!-- PROBLEM YOU SOLVED -->
+<div class="card">
+<h2>🧠 Problem Solved</h2>
+<p>
+The analysis helped identify what drives user engagement and what causes users to skip content.
+This directly addresses the challenge of improving recommendation accuracy and user retention.
+</p>
+</div>
+
+<!-- OUTCOME / ACHIEVEMENT -->
+<div class="card">
+<h2>🚀 Outcome / Achievement</h2>
+<ul>
+<li>Improved understanding of user listening behavior patterns</li>
+<li>Identified key drivers of engagement and skip behavior</li>
+<li>Provided insights that can improve recommendation algorithms</li>
+<li>Enabled data-driven decisions for content and playlist optimization</li>
+</ul>
+</div>
+
+<!-- DASHBOARD -->
+<div class="card">
+<h2>📈 Dashboard Preview</h2>
+<img src="spotify.png" alt="Spotify Dashboard">
+</div>
+
+<a class="btn" href="index.html">← Back to Portfolio</a>
 
 </section>
 
