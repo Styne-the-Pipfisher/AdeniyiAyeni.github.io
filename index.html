@@ -15,12 +15,14 @@
 
     /* NAVIGATION */
     nav {
-      background: white;
+      background: rgba(255,255,255,0.95);
       padding: 15px;
       text-align: center;
       position: sticky;
       top: 0;
+      backdrop-filter: blur(10px);
       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      z-index: 1000;
     }
 
     nav a {
@@ -28,6 +30,7 @@
       text-decoration: none;
       color: #1f2937;
       font-weight: bold;
+      font-size: 14px;
     }
 
     /* HEADER */
@@ -35,11 +38,11 @@
       background: linear-gradient(135deg, #0f172a, #1e3a8a);
       color: white;
       text-align: center;
-      padding: 90px 20px;
+      padding: 100px 20px;
     }
 
     header h1 {
-      font-size: 48px;
+      font-size: 50px;
       margin: 0;
     }
 
@@ -69,11 +72,12 @@
       margin-bottom: 20px;
       border-radius: 12px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-      transition: 0.3s;
+      transition: all 0.3s ease;
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.1);
     }
 
     /* SKILLS */
@@ -89,6 +93,23 @@
       padding: 8px 14px;
       border-radius: 20px;
       font-size: 14px;
+    }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1e40af;
     }
 
     /* FOOTER */
@@ -123,7 +144,7 @@
   <h2>About Me</h2>
   <div class="card">
     I am a Data Analyst focused on transforming raw data into actionable business insights.  
-    I specialize in data visualization, dashboard development, and performance analytics using Power BI, Excel, and SQL.
+    I specialize in dashboard development, data visualization, and performance analytics using Power BI, Excel, and SQL.
   </div>
 </section>
 
@@ -148,22 +169,30 @@
 
   <div class="card">
     <h3>Spotify Listening Behavior Analysis</h3>
-    <p>Built a Power BI dashboard analyzing user engagement, skip rates, and listening patterns across different artists and albums.</p>
+    <p>Built a Power BI dashboard analyzing user engagement, skip rates, and listening patterns across artists and albums.</p>
+    <a href="#" class="btn">View Dashboard</a>
+    <img src="spotify.png" style="width:100%; border-radius:10px; margin-top:10px;">
   </div>
 
   <div class="card">
     <h3>Healthcare Expenditure Analysis</h3>
-    <p>Analyzed global healthcare spending trends across countries and income levels to identify inefficiencies and disparities.</p>
+    <p>Analyzed global healthcare spending trends across countries and income groups to identify inefficiencies and disparities.</p>
+    <a href="#" class="btn">View Analysis</a>
+    <img src="healthcare.png" style="width:100%; border-radius:10px; margin-top:10px;">
   </div>
 
   <div class="card">
     <h3>Insurance Claims Analysis</h3>
     <p>Identified high-risk customer profiles based on claim frequency, demographics, and vehicle usage patterns.</p>
+    <a href="#" class="btn">View Insights</a>
+    <img src="insurance.png" style="width:100%; border-radius:10px; margin-top:10px;">
   </div>
 
   <div class="card">
     <h3>E-commerce Business Analysis</h3>
     <p>Evaluated product performance, discount impact, customer acquisition channels, and revenue trends.</p>
+    <a href="#" class="btn">View Report</a>
+    <img src="ecommerce.png" style="width:100%; border-radius:10px; margin-top:10px;">
   </div>
 
 </section>
@@ -172,9 +201,9 @@
 <section id="contact">
   <h2>Contact</h2>
   <div class="card">
-    <p>Email: ayeniadeniyi2000@gmail.com</p>
-    <p>LinkedIn: https://www.linkedin.com/in/adeniyi-ayeni</p>
-    <p>GitHub: https://styne-the-pipfisher.github.io/AdeniyiAyeni.github.io/</p>
+    <p>Email: yourname@email.com</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    <p>GitHub: github.com/yourprofile</p>
   </div>
 </section>
 
