@@ -11,67 +11,75 @@ body{
   font-family:Segoe UI, sans-serif;
   background:#0b1220;
   color:#e5e7eb;
+  line-height:1.6;
 }
 
 /* NAV */
 nav{
   position:sticky;
   top:0;
-  background:rgba(15,23,42,0.8);
-  backdrop-filter:blur(10px);
+  background:rgba(15,23,42,0.85);
+  backdrop-filter:blur(12px);
   display:flex;
   justify-content:center;
   padding:15px;
   z-index:1000;
+  border-bottom:1px solid rgba(255,255,255,0.05);
 }
 nav a{
   color:#e5e7eb;
-  margin:0 15px;
+  margin:0 18px;
   text-decoration:none;
   font-weight:600;
+  font-size:14px;
 }
 nav a:hover{color:#60a5fa}
 
-/* HERO */
+/* HERO (UPGRADED LIKE ELITE PORTFOLIOS) */
 header{
   text-align:center;
-  padding:100px 20px;
-  background:linear-gradient(135deg,#1e3a8a,#0f172a);
+  padding:130px 20px;
+  background:radial-gradient(circle at top, #1e3a8a, #0b1220 60%);
 }
 header h1{
-  font-size:55px;
+  font-size:64px;
   margin:0;
+  letter-spacing:-1px;
 }
 header p{
   font-size:18px;
   opacity:0.85;
+  max-width:600px;
+  margin:10px auto 0;
 }
 
 /* SECTIONS */
 section{
-  max-width:1000px;
+  max-width:1050px;
   margin:auto;
-  padding:60px 20px;
+  padding:80px 20px;
 }
 
 h2{
-  border-left:5px solid #3b82f6;
-  padding-left:10px;
-  margin-bottom:20px;
+  font-size:22px;
+  border-left:4px solid #3b82f6;
+  padding-left:12px;
+  margin-bottom:25px;
 }
 
-/* CARDS */
+/* CARDS (MORE PREMIUM LOOK) */
 .card{
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.1);
-  padding:20px;
-  border-radius:14px;
-  margin-bottom:20px;
-  transition:0.3s;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  padding:24px;
+  border-radius:16px;
+  margin-bottom:22px;
+  transition:0.3s ease;
 }
 .card:hover{
   transform:translateY(-6px);
   border-color:#3b82f6;
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
 }
 
 /* SKILLS */
@@ -83,28 +91,32 @@ h2{
 .skill{
   background:#1e293b;
   padding:8px 14px;
-  border-radius:20px;
+  border-radius:999px;
   font-size:13px;
 }
 
 /* BUTTON */
 .btn{
   display:inline-block;
-  margin-top:10px;
+  margin-top:12px;
   padding:10px 14px;
   background:#3b82f6;
   color:white;
-  border-radius:8px;
+  border-radius:10px;
   text-decoration:none;
+  font-size:14px;
+  transition:0.2s;
 }
 .btn:hover{background:#2563eb}
 
 /* FOOTER */
 footer{
   text-align:center;
-  padding:30px;
+  padding:40px;
   background:#020617;
-  margin-top:40px;
+  margin-top:60px;
+  font-size:13px;
+  opacity:0.7;
 }
 </style>
 </head>
@@ -120,21 +132,21 @@ footer{
 
 <header>
 <h1>Adeniyi Ayeni</h1>
-<p>Data Analyst | Power BI | SQL | Excel | Turning Data Into Decisions</p>
+<p>Data Analyst | Power BI | SQL | Excel | Turning Data Into Business Decisions</p>
 </header>
 
 <section id="about">
 <h2>About Me</h2>
 <div class="card">
-  <p>
-I am a Data Analyst with strong focus on business, healthcare, and crypto analytics, passionate about turning complex dataset into clear insights that support smarter decisions and strategic growth. In the past i have worked on analytical projects involving data cleaning, exploratory data analysis, and dashboard development using tools such as Excel, SQL, and PowerBI. These experiences helped me build a solid foundation in identifying patterns, tracking performance metrics, and translating data into business value.
-  </p>
-  <p>
-Currently, I am deepening my expertise by working on real-world projects across business performance analysis, healthcare trends, and crypto currency market behaviour. I am focused on building end-to-end analytics solution that include; data modelling, KPI tracking, and interactive dashboards that help stakeholders understand both operational and strategic insights.
-  </p>
-  <p>
-    Moving forward, i am continously improving my skills in advanced SQL, predictive analysis, and data storytelling. I am also expanding my understanding of healthcare systems data and blockchain/crypto market analytics to deliver more specialized, high impact insights. My goal is to become a versatile analyst who bridges business needs with data-driven solutions across multiple high growth industries.
-  </p>
+<p>
+I am a Data Analyst focused on business intelligence, healthcare analytics, and emerging data trends. I transform raw datasets into meaningful insights that support decision-making, performance tracking, and business growth.
+</p>
+<p>
+My experience includes data cleaning, exploratory analysis, KPI development, and dashboard creation using Power BI, Excel, and SQL. I enjoy uncovering patterns that help organizations make smarter decisions.
+</p>
+<p>
+Currently, I am building advanced analytics projects across business, healthcare, and financial data, with a focus on storytelling and real-world impact.
+</p>
 </div>
 </section>
 
@@ -155,27 +167,26 @@ Currently, I am deepening my expertise by working on real-world projects across 
 <h2>Projects</h2>
 
 <div class="card">
-<h3>Spotify Listening Behaviour Analysis</h3>
-<p>Data Analyst | Power BI</p>
-<p>Analyzed user engagement, skips, and listening behavior patterns.</p>
+<h3>🎧 Spotify Listening Behaviour Analysis</h3>
+<p>Analyzed user engagement patterns, skip rates, and listening behavior to improve recommendation understanding.</p>
 <a class="btn" href="spotify.html">View Case Study</a>
 </div>
 
 <div class="card">
-<h3>Healthcare Expenditure Analysis</h3>
-<p>Explored global healthcare spending trends and disparities.</p>
+<h3>🏥 Healthcare Expenditure Analysis</h3>
+<p>Explored global healthcare spending disparities across income groups and countries.</p>
 <a class="btn" href="healthcare.html">View Case Study</a>
 </div>
 
 <div class="card">
-<h3>Insurance Risk Analysis</h3>
-<p>Identified high-risk customer segments using claims data.</p>
+<h3>🚗 Insurance Risk Analysis</h3>
+<p>Identified high-risk customer segments using claims frequency and demographic patterns.</p>
 <a class="btn" href="insurance.html">View Case Study</a>
 </div>
 
 <div class="card">
-<h3>E-commerce Performance Analysis</h3>
-<p>Evaluated sales, discounts, and product profitability.</p>
+<h3>🛒 E-commerce Performance Analysis</h3>
+<p>Evaluated product performance, discount impact, and profitability trends.</p>
 <a class="btn" href="ecommerce.html">View Case Study</a>
 </div>
 
