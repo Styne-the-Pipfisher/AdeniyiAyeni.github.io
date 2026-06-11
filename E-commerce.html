@@ -1,42 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nykaa E-Commerce Performance Analysis | Adeniyi Ayeni</title>
+
+<style>
+
+:root{
+  --bg:#0a0f1c;
+  --card:#111827;
+  --border:#1f2937;
+  --text:#f8fafc;
+  --muted:#94a3b8;
+  --accent:#3b82f6;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:Segoe UI,sans-serif;
+  line-height:1.8;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:80px 20px;
+}
+
+.hero{
+  text-align:center;
+  padding:60px 0;
+}
+
+.hero h1{
+  font-size:3rem;
+  margin-bottom:15px;
+}
+
+.hero p{
+  color:var(--muted);
+  max-width:700px;
+  margin:auto;
+}
+
+.section{
+  margin-top:50px;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:30px;
+}
+
+h2{
+  color:white;
+  margin-bottom:20px;
+  font-size:1.5rem;
+}
+
+ul{
+  padding-left:20px;
+}
+
+li{
+  margin-bottom:10px;
+}
+
+.metrics{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+
+.metric{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:25px;
+  text-align:center;
+}
+
+.metric h3{
+  color:var(--accent);
+  font-size:2rem;
+}
+
+.metric p{
+  color:var(--muted);
+}
+
+.dashboard{
+  width:100%;
+  border-radius:16px;
+  margin-top:20px;
+  border:1px solid var(--border);
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 24px;
+  background:var(--accent);
+  color:white;
+  text-decoration:none;
+  border-radius:10px;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+.back{
+  margin-bottom:40px;
+  display:inline-block;
+  color:var(--muted);
+  text-decoration:none;
+}
+
+.back:hover{
+  color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="index.html" class="back">
+← Back to Portfolio
+</a>
+
+<div class="hero">
 <h1>Nykaa E-Commerce Performance Analysis</h1>
 
-<h2>Business Problem</h2>
 <p>
-Nykaa needed visibility into product performance, discount effectiveness, and customer purchasing behavior to optimize revenue and profitability.
+Analyzing revenue, profitability, customer behavior, discount effectiveness,
+and product performance to uncover opportunities for growth and operational improvement.
+</p>
+</div>
+
+<div class="metrics">
+
+<div class="metric">
+<h3>Revenue</h3>
+<p>Sales Performance Tracking</p>
+</div>
+
+<div class="metric">
+<h3>Profit</h3>
+<p>Profitability Analysis</p>
+</div>
+
+<div class="metric">
+<h3>Orders</h3>
+<p>Customer Purchase Activity</p>
+</div>
+
+<div class="metric">
+<h3>Discounts</h3>
+<p>Promotion Effectiveness</p>
+</div>
+
+</div>
+
+<div class="section">
+<div class="card">
+
+<h2>Business Problem</h2>
+
+<p>
+Nykaa needed visibility into product performance, discount effectiveness,
+customer purchasing behavior, and profitability trends to support
+data-driven decision making.
 </p>
 
+</div>
+</div>
+
+<div class="section">
+<div class="card">
+
 <h2>Data Overview</h2>
+
 <ul>
-<li>Sales transactions</li>
-<li>Product categories</li>
-<li>Discount rates</li>
-<li>Customer behavior</li>
+<li>Sales Transactions</li>
+<li>Product Categories</li>
+<li>Customer Purchase Data</li>
+<li>Discount Information</li>
+<li>Revenue & Profit Metrics</li>
 </ul>
+
+</div>
+</div>
+
+<div class="section">
+<div class="card">
 
 <h2>Analysis Approach</h2>
+
 <ul>
-<li>Data cleaning and transformation</li>
-<li>KPI development (Revenue, Profit, AOV)</li>
-<li>Category performance analysis</li>
-<li>Discount impact evaluation</li>
+<li>Data Cleaning & Transformation</li>
+<li>KPI Development</li>
+<li>Revenue & Profit Analysis</li>
+<li>Customer Behavior Analysis</li>
+<li>Category Performance Evaluation</li>
+<li>Discount Impact Assessment</li>
 </ul>
+
+</div>
+</div>
+
+<div class="section">
+<div class="card">
 
 <h2>Key Insights</h2>
+
 <ul>
-<li>High discounts did not always lead to higher profit</li>
-<li>Few categories contributed majority of revenue</li>
-<li>Some products consistently underperformed despite high sales volume</li>
+<li>High discounts did not always translate into higher profitability.</li>
+<li>A small number of product categories generated a large share of revenue.</li>
+<li>Some products generated strong sales volume but weak profit margins.</li>
+<li>Customer purchasing behavior revealed opportunities for targeted promotions.</li>
+<li>Revenue concentration highlighted critical categories driving business performance.</li>
 </ul>
+
+</div>
+</div>
+
+<div class="section">
+<div class="card">
 
 <h2>Recommendations</h2>
+
 <ul>
-<li>Optimize discount strategy by category</li>
-<li>Focus marketing on high-margin products</li>
-<li>Re-evaluate underperforming SKUs</li>
+<li>Optimize discount strategies by category.</li>
+<li>Prioritize high-margin products in marketing campaigns.</li>
+<li>Review underperforming products for pricing or inventory adjustments.</li>
+<li>Develop customer segmentation strategies for personalized promotions.</li>
+<li>Monitor profitability alongside revenue when evaluating performance.</li>
 </ul>
 
-<h2>Live Dashboard</h2>
-<a href="https://app.powerbi.com/view?r=eyJrIjoiOGFkNmE4YzgtZTk0My00YjAyLTk2NzAtZWRjODU5M2M2ODEzIiwidCI6IjY1NWVhNmI4LWVjMjYtNDE0OC1iYjU2LTE0MThhYjc4MmZjYyJ9"
+</div>
+</div>
+
+<div class="section">
+<div class="card">
+
+<h2>Dashboard Preview</h2>
+
+<img src="ecommerce-dashboard.png"
+     alt="Nykaa Dashboard"
+     class="dashboard">
+
+<a class="btn"
+href="https://app.powerbi.com/view?r=eyJrIjoiOGFkNmE4YzgtZTk0My00YjAyLTk2NzAtZWRjODU5M2M2ODEzIiwidCI6IjY1NWVhNmI4LWVjMjYtNDE0OC1iYjU2LTE0MThhYjc4MmZjYyJ9"
 target="_blank">
 View Interactive Power BI Dashboard
 </a>
+
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
