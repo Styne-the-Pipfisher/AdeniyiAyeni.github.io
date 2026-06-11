@@ -1,8 +1,12 @@
+Here's the full clean code — just copy and paste it:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Adeniyi Ayeni — Data Analyst portfolio featuring projects in healthcare, e-commerce, insurance, and Spotify analytics.">
 <title>Adeniyi Ayeni | Data Analyst Portfolio</title>
 
 <style>
@@ -23,7 +27,6 @@ body{
   line-height:1.6;
 }
 
-/* NAV */
 nav{
   position:sticky;
   top:0;
@@ -44,7 +47,6 @@ nav a{
 }
 nav a:hover{opacity:1;color:var(--accent)}
 
-/* HERO */
 header{
   padding:140px 20px 100px;
   text-align:center;
@@ -64,7 +66,6 @@ header p{
   font-size:16px;
 }
 
-/* SECTIONS */
 section{
   max-width:1050px;
   margin:auto;
@@ -79,7 +80,6 @@ h2{
   color:#cbd5e1;
 }
 
-/* CARD */
 .card{
   background:var(--card);
   border:1px solid var(--border);
@@ -93,20 +93,22 @@ h2{
   border-color:var(--accent);
 }
 
-/* GRID PROJECTS */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
   gap:18px;
 }
 
-/* SKILLS */
-.skills{
+.skills,
+.tools,
+.domains {
   display:flex;
   flex-wrap:wrap;
   gap:10px;
 }
-.skill{
+.skill,
+.tool,
+.domain {
   background:#111827;
   padding:7px 12px;
   border-radius:999px;
@@ -115,7 +117,6 @@ h2{
   border:1px solid var(--border);
 }
 
-/* BUTTON */
 .btn{
   display:inline-block;
   margin-top:12px;
@@ -128,7 +129,6 @@ h2{
 }
 .btn:hover{background:#2563eb}
 
-/* IMAGE */
 img{
   width:100%;
   border-radius:12px;
@@ -136,7 +136,6 @@ img{
   border:1px solid var(--border);
 }
 
-/* FOOTER */
 footer{
   text-align:center;
   padding:50px;
@@ -151,111 +150,118 @@ footer{
 <body>
 
 <nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#tools">Tools</a>
-<a href="#domains">Domainss</a>
-<a href="#projects">Case Studies</a>
-<a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#tools">Tools</a>
+  <a href="#domains">Domains</a>
+  <a href="#projects">Case Studies</a>
 </nav>
 
 <header>
-<h1>AYENI ADENIYI</h1>
-<p>Data Analyst | Business Intelligence | Healthcare & Crypto Analytics</p>
-<p>Turning Data Into Decisions Through Data Analytics, Visualization, and Business Intelligence.</p>
+  <h1>AYENI ADENIYI</h1>
+  <p>Data Analyst | Business Intelligence | Healthcare & Crypto Analytics</p>
+  <p>Turning Data Into Decisions Through Data Analytics, Visualization, and Business Intelligence.</p>
 </header>
 
 <section id="about">
-<h2>About</h2>
-<div class="card">
-I am a Data Analyst with hands-on experience transforming raw data into actionable insights that support business decisions. I have worked on projects involving e-commerce performance analysis, customer behavior, and operational efficiency, where I used tools like Excel, Power BI, and SQL to clean, analyze, and visualize data for meaningful storytelling.
-<br><br>
-Currently, I am building more advanced analytics projects focused on business intelligence dashboards, performance tracking systems, and data-driven decision-making models. I am also strengthening my skills in SQL optimization, Power BI DAX, and data modeling to handle more complex business problems and larger datasets.
-<br><br>
-I am continuously improving my ability to think like a business analyst—moving beyond just reporting data to identifying trends, uncovering opportunities, and recommending strategic actions that drive growth and efficiency.
-</div>
+  <h2>About</h2>
+  <div class="card">
+    I am a Data Analyst with hands-on experience transforming raw data into actionable insights
+    that support business decisions. I have worked on projects involving e-commerce performance
+    analysis, customer behavior, and operational efficiency, where I used tools like Excel,
+    Power BI, and SQL to clean, analyze, and visualize data for meaningful storytelling.
+    <br><br>
+    Currently, I am building more advanced analytics projects focused on business intelligence
+    dashboards, performance tracking systems, and data-driven decision-making models. I am also
+    strengthening my skills in SQL optimization, Power BI DAX, and data modeling to handle more
+    complex business problems and larger datasets.
+    <br><br>
+    I am continuously improving my ability to think like a business analyst—moving beyond just
+    reporting data to identifying trends, uncovering opportunities, and recommending strategic
+    actions that drive growth and efficiency.
+  </div>
 </section>
 
 <section id="skills">
-<h2>Skills</h2>
-<div class="card skills">
-<div class="skill">Data Analysis</div>
-<div class="skill">Business Analysis</div>
-<div class="skill">Exploratory Data Analysis</div>
-<div class="skill">KPI Development</div>
-<div class="skill">Data Modeling</div>
-<div class="skill">KPI Design</div>
-<div class="skill">Data Storytelling</div>
-</div>
+  <h2>Skills</h2>
+  <div class="card skills">
+    <div class="skill">Data Analysis</div>
+    <div class="skill">Business Analysis</div>
+    <div class="skill">Exploratory Data Analysis</div>
+    <div class="skill">KPI Development</div>
+    <div class="skill">Data Modeling</div>
+    <div class="skill">KPI Design</div>
+    <div class="skill">Data Storytelling</div>
+  </div>
 </section>
 
 <section id="tools">
-<h2>Tools</h2>
-<div class="card tools">
-<div class="tool">Excel</div>
-<div class="tool">Power BI</div>
-<div class="tool">SQL</div>
-<div class="tool">DAX</div>
-<div class="tool">Microsoft Word</div>
-</div>
+  <h2>Tools</h2>
+  <div class="card tools">
+    <div class="tool">Excel</div>
+    <div class="tool">Power BI</div>
+    <div class="tool">SQL</div>
+    <div class="tool">DAX</div>
+    <div class="tool">Microsoft Word</div>
+  </div>
 </section>
 
 <section id="domains">
-<h2>Domains</h2>
-<div class="card domains">
-<div class="domain">Business Analytics</div>
-<div class="domain">Healthcare Analytics</div>
-<div class="domain">Crypto Analytics</div>
-</div>
+  <h2>Domains</h2>
+  <div class="card domains">
+    <div class="domain">Business Analytics</div>
+    <div class="domain">Healthcare Analytics</div>
+    <div class="domain">Crypto Analytics</div>
+  </div>
 </section>
 
-<section id="Case Studies">
-<h2>Projects</h2>
+<section id="projects">
+  <h2>Case Studies</h2>
+  <div class="grid">
 
-<div class="grid">
+    <div class="card">
+      <h3>Spotify User Analytics</h3>
+      <p>Analyzed engagement, skip behavior, and listening patterns to understand user retention drivers.</p>
+      <img src="spotify-dashboard.png" alt="Spotify User Analytics dashboard screenshot">
+      <a class="btn" href="spotify.html">View Case Study</a>
+    </div>
 
-<div class="card">
-<h3>Spotify User Analytics</h3>
-<p>Analyzed engagement, skip behavior, and listening patterns to understand user retention drivers.</p>
-<img src="spotify-dashboard.png">
-<a class="btn" href="spotify.html">View Case Study</a>
-</div>
+    <div class="card">
+      <h3>Healthcare Cost Analysis</h3>
+      <p>Studied global healthcare spending disparities across income groups and regions.</p>
+      <img src="healthcare.png" alt="Healthcare Cost Analysis dashboard screenshot">
+      <a class="btn" href="healthcare.html">View Case Study</a>
+    </div>
 
-<div class="card">
-<h3>Healthcare Cost Analysis</h3>
-<p>Studied global healthcare spending disparities across income groups and regions.</p>
-<img src="healthcare.png">
-<a class="btn" href="healthcare.html">View Case Study</a>
-</div>
+    <div class="card">
+      <h3>Insurance Risk Modeling</h3>
+      <p>Identified high-risk customer segments using claims frequency and demographic factors.</p>
+      <img src="insurance.png" alt="Insurance Risk Modeling dashboard screenshot">
+      <a class="btn" href="insurance.html">View Case Study</a>
+    </div>
 
-<div class="card">
-<h3>Insurance Risk Modeling</h3>
-<p>Identified high-risk customer segments using claims frequency and demographic factors.</p>
-<img src="insurance.png">
-<a class="btn" href="insurance.html">View Case Study</a>
-</div>
+    <div class="card">
+      <h3>E-commerce Performance</h3>
+      <p>Evaluated revenue drivers, discount impact, and product profitability trends.</p>
+      <img src="ecommerce.png" alt="E-commerce Performance dashboard screenshot">
+      <a class="btn" href="ecommerce.html">View Case Study</a>
+    </div>
 
-<div class="card">
-<h3>E-commerce Performance</h3>
-<p>Evaluated revenue drivers, discount impact, and product profitability trends.</p>
-<img src="ecommerce.png">
-<a class="btn" href="ecommerce.html">View Case Study</a>
-</div>
-
-</div>
+  </div>
 </section>
 
 <section id="contact">
-<h2>Contact</h2>
-<div class="card">
-Email: ayeniadeniyi2000@gmail.com <br>
-LinkedIn: linkedin.com/in/yourprofile
-</div>
+  <h2>Contact</h2>
+  <div class="card">
+    Email: ayeniadeniyi2000@gmail.com <br>
+    LinkedIn: <a href="https://linkedin.com/in/yourprofile" style="color:var(--accent)">linkedin.com/in/yourprofile</a>
+  </div>
 </section>
 
 <footer>
-© 2026 Adeniyi Ayeni — Data Analytics Portfolio
+  © 2026 Adeniyi Ayeni — Data Analytics Portfolio
 </footer>
 
 </body>
 </html>
+```
