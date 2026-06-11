@@ -7,21 +7,33 @@
 <title>Adeniyi Ayeni | Data Analyst Portfolio</title>
 
 <style>
-:root{
-  --bg:#0a0f1c;
-  --card:rgba(255,255,255,0.04);
-  --border:rgba(255,255,255,0.08);
-  --text:#e5e7eb;
-  --muted:#a1a1aa;
-  --accent:#3b82f6;
+.card{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
 
-body{
-  margin:0;
-  font-family:Segoe UI, sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.6;
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:12px;
+  margin-top:12px;
+  border:1px solid var(--border);
+}
+
+.card h3{
+  margin-bottom:8px;
+}
+
+.card p{
+  color:#a1a1aa;
+  font-size:14px;
+}
+
+.btn{
+  margin-top:12px;
+  align-self:flex-start;
 }
 
 nav{
@@ -217,47 +229,59 @@ footer{
 
   <div class="grid">
 
+    <!-- SPOTIFY -->
     <div class="card">
       <h3>Spotify User Analytics</h3>
-      <p>Analyzed engagement, skip behavior, and listening patterns to understand user retention drivers.</p>
+      <p>
+        Analyzed engagement, skip behavior, and listening patterns to understand user retention drivers.
+      </p>
 
       <img src="spotify-dashboard.png" alt="Spotify dashboard">
 
-      <a class="btn" href="https://www.linkedin.com/posts/adeniyi-ayeni_project-name-nykaa-e-commerce-the-analysis-activity-7457232354290515968-dOKe" target="_blank">
-        View Full Case Study
+      <a class="btn" href="spotify.html">
+        View Case Study
       </a>
     </div>
 
+    <!-- HEALTHCARE -->
     <div class="card">
       <h3>Healthcare Cost Analysis</h3>
-      <p>Studied global healthcare spending disparities across income groups and regions.</p>
+      <p>
+        Studied global healthcare spending disparities across income groups and regions.
+      </p>
 
       <img src="healthcare.png" alt="Healthcare dashboard">
 
-      <a class="btn" href="#" target="_blank">
-        Case Study Coming Soon
+      <a class="btn" href="healthcare.html">
+        View Case Study
       </a>
     </div>
 
+    <!-- INSURANCE -->
     <div class="card">
       <h3>Insurance Risk Modeling</h3>
-      <p>Identified high-risk customer segments using claims frequency and demographic factors.</p>
+      <p>
+        Identified high-risk customer segments using claims frequency and demographic factors.
+      </p>
 
       <img src="insurance.png" alt="Insurance dashboard">
 
-      <a class="btn" href="#" target="_blank">
-        Case Study Coming Soon
+      <a class="btn" href="insurance.html">
+        View Case Study
       </a>
     </div>
 
+    <!-- ECOMMERCE -->
     <div class="card">
-      <h3>E-commerce Performance</h3>
-      <p>Evaluated revenue drivers, discount impact, and product profitability trends.</p>
+      <h3>E-commerce Performance Analysis</h3>
+      <p>
+        Evaluated revenue drivers, discount impact, and product profitability trends.
+      </p>
 
       <img src="ecommerce.png" alt="E-commerce dashboard">
 
-      <a class="btn" href="#" target="_blank">
-        Case Study Coming Soon
+      <a class="btn" href="ecommerce.html">
+        View Case Study
       </a>
     </div>
 
