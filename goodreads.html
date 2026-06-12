@@ -1,47 +1,300 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Insurance Case Study</title>
 
-  <style>
-    body { font-family: Arial; margin:0; background:#f5f7fb; }
-    header { background:#0f172a; color:white; padding:60px; text-align:center; }
-    section { max-width:900px; margin:auto; padding:40px; }
-    .card { background:white; padding:20px; margin-bottom:20px; border-radius:10px; }
-    .btn { display:inline-block; padding:10px 14px; background:#2563eb; color:white; text-decoration:none; border-radius:8px; }
-    img { width:100%; border-radius:10px; margin-top:10px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Goodreads Reader Behavior Analysis | Adeniyi Ayeni</title>
+
+<style>
+
+:root{
+  --bg:#0a0f1c;
+  --card:#111827;
+  --border:#1f2937;
+  --text:#f8fafc;
+  --muted:#94a3b8;
+  --accent:#3b82f6;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:Segoe UI,sans-serif;
+  line-height:1.8;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:80px 20px;
+}
+
+.hero{
+  text-align:center;
+  padding:60px 0;
+}
+
+.hero h1{
+  font-size:3rem;
+  margin-bottom:15px;
+}
+
+.hero p{
+  color:var(--muted);
+  max-width:700px;
+  margin:auto;
+}
+
+.section{
+  margin-top:50px;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:30px;
+}
+
+h2{
+  margin-bottom:20px;
+}
+
+ul{
+  padding-left:20px;
+}
+
+li{
+  margin-bottom:10px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 24px;
+  background:var(--accent);
+  color:white;
+  text-decoration:none;
+  border-radius:10px;
+}
+
+.dashboard{
+  width:100%;
+  border-radius:16px;
+  margin-top:20px;
+}
+
+.back{
+  margin-bottom:40px;
+  display:inline-block;
+  color:var(--muted);
+  text-decoration:none;
+}
+
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>Insurance Claims Analysis</h1>
-</header>
+<div class="container">
 
-<section>
+<a href="index.html" class="back">← Back to Portfolio</a>
 
-  <div class="card">
-    <h2>Problem</h2>
-    <p>Identify high-risk customers and claim patterns.</p>
-  </div>
+<div class="hero">
 
-  <div class="card">
-    <h2>Insights</h2>
-    <ul>
-      <li>High-risk segments identified</li>
-      <li>Claim frequency patterns discovered</li>
-    </ul>
-  </div>
+<h1>Goodreads Reader Behavior Analysis</h1>
 
-  <div class="card">
-    <h2>Dashboard</h2>
-    <img src="insurance.png">
-  </div>
+<p>
+From Ratings To Reviews: Understanding Reader Behavior Through Book Performance, 
+Genre Trends, Author Influence, and Audience Engagement Analytics.
+</p>
 
-  <a class="btn" href="index.html">Back Home</a>
+</div>
 
-</section>
+<div class="section">
+<div class="card">
+
+<h2>Project Overview</h2>
+
+<p>
+This project analyzes Goodreads platform data to understand how readers engage with books, 
+what factors influence book popularity, how genres perform, and how author reputation affects audience behavior.
+</p>
+
+<p>
+The objective was to uncover patterns in book performance, reader reviews, rating behavior, 
+and genre preferences to identify what drives engagement in digital reading communities.
+</p>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Dataset Overview</h2>
+
+<ul>
+<li>12,540 Books</li>
+<li>18,800 Users</li>
+<li>1.14 Million Reviews</li>
+<li>Book Metadata</li>
+<li>User Review Data</li>
+<li>Ratings Information</li>
+<li>Genre Categories</li>
+<li>Author Data</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Data Cleaning & Transformation</h2>
+
+<ul>
+<li>Performed data cleaning in Power Query.</li>
+<li>Corrected date formats.</li>
+<li>Removed duplicate records.</li>
+<li>Replaced empty values with Null.</li>
+<li>Filtered unnecessary rows.</li>
+<li>Created additional supporting tables.</li>
+<li>Split columns for improved analysis.</li>
+<li>Built relational data model.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Key Metrics</h2>
+
+<ul>
+<li>Total Books → 12.54K</li>
+<li>Total Users → 18.80K</li>
+<li>Total Reviews → 1.14M</li>
+<li>Average Book Rating</li>
+<li>Review Volume</li>
+<li>Author Rating Performance</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Key Insights</h2>
+
+<ul>
+<li>The Hunger Games was the most reviewed book with 157K reviews.</li>
+
+<li>Fantasy was the most common genre and had the highest average page count.</li>
+
+<li>Children genre received the highest volume of ratings.</li>
+
+<li>Fiction books received the highest number of 5-star ratings.</li>
+
+<li>J.K Rowling had the highest number of ratings overall.</li>
+
+<li>Stephen King emerged as the most prolific author.</li>
+
+<li>Angie Thomas recorded the highest average rating performance.</li>
+
+<li>20 hidden gem books were identified with strong ratings but low exposure.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Reader Behavior Analysis</h2>
+
+<ul>
+<li>Books with ratings near 4.0 generated the highest review volume.</li>
+
+<li>Extremely low-rated and extremely high-rated books generated fewer reviews.</li>
+
+<li>Widely read books tend to maintain balanced ratings.</li>
+
+<li>Less popular books showed more extreme positive or negative ratings.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Business Value</h2>
+
+<p>
+Book marketplaces can use this analysis to improve recommendation systems, 
+identify under-promoted books, understand genre demand shifts, and optimize 
+marketing strategies around high-engagement titles.
+</p>
+
+<p>
+This analysis demonstrates how customer behavior data can drive product discovery and improve digital platform engagement.
+</p>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Recommendations</h2>
+
+<ul>
+<li>Promote hidden gem books to improve discovery.</li>
+
+<li>Expand non-fiction while maintaining strong fantasy catalog.</li>
+
+<li>Continue leveraging bestselling franchises.</li>
+
+<li>Promote books around 4.0 ratings to maximize community engagement.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Conclusion</h2>
+
+<p>
+The analysis revealed clear relationships between reader behavior, book ratings, review volume, 
+genre popularity, and author reputation. Reader engagement is strongest around widely relatable 
+books rather than rating extremes.
+</p>
+
+</div>
+</div>
+
+</div>
 
 </body>
 </html>
