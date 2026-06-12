@@ -1,47 +1,418 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Healthcare Case Study</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body { font-family: Arial; margin:0; background:#f5f7fb; }
-    header { background:#0f172a; color:white; padding:60px; text-align:center; }
-    section { max-width:900px; margin:auto; padding:40px; }
-    .card { background:white; padding:20px; margin-bottom:20px; border-radius:10px; }
-    .btn { display:inline-block; padding:10px 14px; background:#2563eb; color:white; text-decoration:none; border-radius:8px; }
-    img { width:100%; border-radius:10px; margin-top:10px; }
-  </style>
+<title>Spotify wrapped analysis Analysis | Adeniyi Ayeni</title>
+
+<style>
+
+:root{
+  --bg:#0a0f1c;
+  --card:#111827;
+  --border:#1f2937;
+  --text:#f8fafc;
+  --muted:#94a3b8;
+  --accent:#3b82f6;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:Segoe UI,sans-serif;
+  line-height:1.8;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:80px 20px;
+}
+
+.hero{
+  text-align:center;
+  padding:60px 0;
+}
+
+.hero h1{
+  font-size:3rem;
+  margin-bottom:15px;
+}
+
+.hero p{
+  color:var(--muted);
+  max-width:700px;
+  margin:auto;
+}
+
+.section{
+  margin-top:50px;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:30px;
+}
+
+h2{
+  color:white;
+  margin-bottom:20px;
+  font-size:1.5rem;
+}
+
+ul{
+  padding-left:20px;
+}
+
+li{
+  margin-bottom:10px;
+}
+
+.metrics{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+
+.metric{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:25px;
+  text-align:center;
+}
+
+.metric h3{
+  color:var(--accent);
+  font-size:2rem;
+}
+
+.metric p{
+  color:var(--muted);
+}
+
+.dashboard{
+  width:100%;
+  border-radius:16px;
+  margin-top:20px;
+  border:1px solid var(--border);
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 24px;
+  background:var(--accent);
+  color:white;
+  text-decoration:none;
+  border-radius:10px;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+.back{
+  margin-bottom:40px;
+  display:inline-block;
+  color:var(--muted);
+  text-decoration:none;
+}
+
+.back:hover{
+  color:white;
+}
+
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>Healthcare Expenditure Analysis</h1>
-</header>
+<div class="container">
 
-<section>
+<a href="index.html" class="back">
+← Back to Portfolio
+</a>
 
-  <div class="card">
-    <h2>Problem</h2>
-    <p>Analyze healthcare spending trends across countries.</p>
-  </div>
+<div class="hero">
+<h1>healthcare cost analysis</h1>
 
-  <div class="card">
-    <h2>Insights</h2>
-    <ul>
-      <li>Spending disparity across income levels</li>
-      <li>Rapid growth in developing regions</li>
-    </ul>
-  </div>
+<p>
+Analyzed healthcare facility distribution, funding allocation, and emergency response efficiency 
+to identify urban-rural healthcare disparities and provide data-driven policy recommendations.
+</p>
+</div>
 
-  <div class="card">
-    <h2>Dashboard</h2>
-    <img src="healthcare.png">
-  </div>
+<div class="section">
+<div class="card">
 
-  <a class="btn" href="index.html">Back Home</a>
+<h2>Project Overview</h2>
 
-</section>
+<p>
+This project analyzes healthcare facility distribution, funding allocation, and emergency response efficiency across
+urban and rural regions to identify healthcare access disparities and support data-driven healthcare policy decisions.
+</p>
+
+<p>
+The objective of this analysis was to evaluate how healthcare resources are distributed, determine whether funding allocation 
+is equitable, assess operational efficiency across facility types, and provide recommendations that improve healthcare 
+accessibility in underserved populations.
+</p>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Business Problem</h2>
+
+<p>
+Healthcare access inequality remains one of the biggest challenges facing many 
+healthcare systems, particularly in underserved rural communities.
+</p>
+
+<p>
+Decision makers need to understand whether healthcare funding is being allocated efficiently, 
+whether healthcare facilities are properly distributed across regions, and which operational 
+inefficiencies are preventing equal healthcare access.
+</p>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Key Metrics Tracked</h2>
+
+<ul>
+<li>Total Healthcare Facilities</li>
+<li>Funding Allocation by Region</li>
+<li>Average Emergency Response Time</li>
+<li>Funding Per Patient Visit</li>
+<li>Healthcare Facility Efficiency Rate</li>
+<li>Urban vs Rural Healthcare Distribution Ratio</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Analysis Objectives</h2>
+
+<ul>
+<li>Evaluate healthcare facility distribution across urban and rural regions.</li>
+
+<li>Compare funding allocation between urban and rural healthcare facilities.</li>
+
+<li>Analyze the relationship between funding levels and emergency response time.</li>
+
+<li>Determine the operational efficiency of different healthcare facility types.</li>
+
+<li>Identify major factors driving healthcare inequality.</li>
+
+<li>Provide policy recommendations for improving healthcare access.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Healthcare Facility Distribution Analysis</h2>
+
+<ul>
+<li>Urban areas showed significantly higher concentration of healthcare facilities.</li>
+
+<li>Patients in urban regions had shorter travel distance to medical services.</li>
+
+<li>Rural populations had fewer available healthcare facilities and reduced healthcare accessibility.</li>
+
+<li>Longer travel distances created barriers to accessing critical medical care in rural communities.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Funding Allocation Analysis</h2>
+
+<ul>
+<li>Urban healthcare facilities received higher average funding compared to rural facilities.</li>
+
+<li>Higher funding levels allowed urban facilities to maintain stronger infrastructure and employ more medical professionals.</li>
+
+<li>Rural healthcare centers remained underfunded, directly impacting service quality and patient satisfaction.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Emergency Response Analysis</h2>
+
+<p>
+The analysis found no strong correlation between healthcare funding and emergency response time.
+</p>
+
+<p>
+This suggests that increasing funding alone may not improve emergency response 
+performance and that operational management factors may play a larger role.
+</p>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Facility Efficiency Analysis</h2>
+
+<h3>Rural Areas</h3>
+
+<ul>
+<li>Hospitals received the highest funding and handled the largest patient volume, making them the most efficient facility type.</li>
+
+<li>Clinics operated with lower funding while still delivering cost-effective patient care.</li>
+
+<li>Health Centers had the highest funding per patient visit, making them the least efficient facility type.</li>
+</ul>
+
+<br>
+
+<h3>Urban Areas</h3>
+
+<ul>
+<li>Hospitals demonstrated the highest operational efficiency across all facility types.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Key Findings</h2>
+
+<ul>
+<li>Healthcare infrastructure is concentrated heavily in urban areas.</li>
+
+<li>Rural healthcare facilities are significantly underfunded.</li>
+
+<li>Funding alone does not directly improve emergency response times.</li>
+
+<li>Hospitals showed the strongest operational efficiency in both urban and rural regions.</li>
+
+<li>Healthcare inequality is driven by infrastructure gaps, funding disparity, and shortage of healthcare professionals.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Policy Recommendations</h2>
+
+<ul>
+<li>Increase healthcare funding allocation for rural healthcare facilities.</li>
+
+<li>Develop public-private partnerships to improve rural healthcare infrastructure.</li>
+
+<li>Implement data-driven funding allocation models based on facility performance and patient demand.</li>
+
+<li>Prioritize hospital expansion in underserved rural communities.</li>
+
+<li>Improve accountability and transparency in healthcare expenditure management.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Business Impact of Analysis</h2>
+
+<p>
+Governments and healthcare organizations can use this analysis to improve healthcare resource allocation, 
+reduce inequality in healthcare access, optimize facility performance, and make better investment decisions 
+that improve healthcare delivery outcomes.
+</p>
+
+<p>
+The project demonstrates how data analytics can directly support policy decisions that affect public
+health systems and long-term healthcare planning.
+</p>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Conclusion</h2>
+
+<p>
+This analysis revealed significant healthcare disparities between urban and rural populations, 
+particularly in facility availability and funding allocation.
+</p>
+
+<p>
+By applying data-driven decision making, policymakers can design more equitable healthcare 
+systems that improve access, operational efficiency, and long-term healthcare outcomes 
+across underserved communities.
+</p>
+
+</div>
+</div>
+<h2>Dashboard Preview</h2>
+
+<img src="Spotify Dashboard.png"
+     alt="Spotify Wrapped Dashboard"
+     class="dashboard">
+
+<a class="btn"
+href="https://app.powerbi.com/view?r=eyJrIjoiYzNjOTIwMjMtM2YyNi00ZDQ1LWFiMTItNTk0OWEyMTRmMDcxIiwidCI6IjY1NWVhNmI4LWVjMjYtNDE0OC1iYjU2LTE0MThhYjc4MmZjYyJ9"
+target="_blank">
+View Interactive Power BI Dashboard
+</a>
+
+</div>
+</div>
+
+</div>
 
 </body>
 </html>
