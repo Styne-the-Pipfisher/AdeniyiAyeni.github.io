@@ -3,267 +3,394 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adeniyi Ayeni | Data Analyst Portfolio</title>
+
+<title>Nykaa E-Commerce Performance Analysis | Adeniyi Ayeni</title>
 
 <style>
+
 :root{
   --bg:#0a0f1c;
-  --card:rgba(255,255,255,0.04);
-  --border:rgba(255,255,255,0.08);
-  --text:#e5e7eb;
-  --muted:#a1a1aa;
+  --card:#111827;
+  --border:#1f2937;
+  --text:#f8fafc;
+  --muted:#94a3b8;
   --accent:#3b82f6;
 }
 
-body{
+*{
   margin:0;
-  font-family:Segoe UI, sans-serif;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
   background:var(--bg);
   color:var(--text);
-  line-height:1.6;
+  font-family:Segoe UI,sans-serif;
+  line-height:1.8;
 }
 
-/* NAV */
-nav{
-  position:sticky;
-  top:0;
-  background:rgba(10,15,28,0.7);
-  backdrop-filter:blur(12px);
-  display:flex;
-  justify-content:center;
-  gap:25px;
-  padding:14px;
-  border-bottom:1px solid var(--border);
-  z-index:1000;
-}
-nav a{
-  color:var(--text);
-  text-decoration:none;
-  font-size:13px;
-  opacity:0.8;
-}
-nav a:hover{opacity:1;color:var(--accent)}
-
-/* HERO */
-header{
-  padding:140px 20px 100px;
-  text-align:center;
-  background:
-    radial-gradient(circle at top, #1e3a8a, transparent 60%),
-    radial-gradient(circle at bottom, #0f172a, transparent 60%);
-}
-header h1{
-  font-size:64px;
-  margin:0;
-  letter-spacing:-1px;
-}
-header p{
-  max-width:650px;
-  margin:12px auto 0;
-  color:var(--muted);
-  font-size:16px;
-}
-
-/* SECTIONS */
-section{
-  max-width:1050px;
+.container{
+  max-width:1100px;
   margin:auto;
   padding:80px 20px;
 }
 
-h2{
-  font-size:18px;
-  letter-spacing:1px;
-  text-transform:uppercase;
-  margin-bottom:25px;
-  color:#cbd5e1;
+.hero{
+  text-align:center;
+  padding:60px 0;
 }
 
-/* CARD */
+.hero h1{
+  font-size:3rem;
+  margin-bottom:15px;
+}
+
+.hero p{
+  color:var(--muted);
+  max-width:700px;
+  margin:auto;
+}
+
+.section{
+  margin-top:50px;
+}
+
 .card{
   background:var(--card);
   border:1px solid var(--border);
-  border-radius:16px;
-  padding:22px;
+  border-radius:18px;
+  padding:30px;
+}
+
+h2{
+  color:white;
   margin-bottom:20px;
-  transition:0.25s ease;
-}
-.card:hover{
-  transform:translateY(-6px);
-  border-color:var(--accent);
+  font-size:1.5rem;
 }
 
-/* GRID PROJECTS */
-.grid{
+ul{
+  padding-left:20px;
+}
+
+li{
+  margin-bottom:10px;
+}
+
+.metrics{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:18px;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  margin-top:30px;
 }
 
-/* SKILLS */
-.skills{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
+.metric{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:25px;
+  text-align:center;
 }
-.skill{
-  background:#111827;
-  padding:7px 12px;
-  border-radius:999px;
-  font-size:12px;
-  color:#cbd5e1;
+
+.metric h3{
+  color:var(--accent);
+  font-size:2rem;
+}
+
+.metric p{
+  color:var(--muted);
+}
+
+.dashboard{
+  width:100%;
+  border-radius:16px;
+  margin-top:20px;
   border:1px solid var(--border);
 }
 
-/* BUTTON */
 .btn{
   display:inline-block;
-  margin-top:12px;
-  padding:9px 13px;
+  margin-top:25px;
+  padding:14px 24px;
   background:var(--accent);
   color:white;
-  border-radius:10px;
   text-decoration:none;
-  font-size:13px;
-}
-.btn:hover{background:#2563eb}
-
-/* IMAGE */
-img{
-  width:100%;
-  border-radius:12px;
-  margin-top:12px;
-  border:1px solid var(--border);
+  border-radius:10px;
+  font-weight:600;
+  transition:0.3s;
 }
 
-/* FOOTER */
-footer{
-  text-align:center;
-  padding:50px;
-  font-size:12px;
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+.back{
+  margin-bottom:40px;
+  display:inline-block;
   color:var(--muted);
-  border-top:1px solid var(--border);
-  margin-top:60px;
+  text-decoration:none;
 }
+
+.back:hover{
+  color:white;
+}
+
 </style>
 </head>
 
 <body>
 
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Case Studies</a>
-<a href="#contact">Contact</a>
-</nav>
+<div class="container">
 
-<header>
-<h1>AYENI ADENIYI</h1>
-<p>Data Analyst | Business Intelligence | Healthcare & Crypto Analytics</p>
-<p>Turning Data Into Decisions Through Data Analytics, Visualization, and Business Intelligence.</p>
-</header>
+<a href="index.html" class="back">
+← Back to Portfolio
+</a>
 
-<section id="about">
-<h2>About</h2>
+<div class="hero">
+<h1>Spotify Wrapped</h1>
+
+<p>
+Analyzing revenue, profitability, customer behavior, discount effectiveness,
+and product performance to uncover opportunities for growth and operational improvement.
+</p>
+</div>
+
+<div class="section">
 <div class="card">
-I am a Data Analyst with hands-on experience transforming raw data into actionable insights that support business decisions. I have worked on projects involving e-commerce performance analysis, customer behavior, and operational efficiency, where I used tools like Excel, Power BI, and SQL to clean, analyze, and visualize data for meaningful storytelling.
-<br><br>
-Currently, I am building more advanced analytics projects focused on business intelligence dashboards, performance tracking systems, and data-driven decision-making models. I am also strengthening my skills in SQL optimization, Power BI DAX, and data modeling to handle more complex business problems and larger datasets.
-<br><br>
-I am continuously improving my ability to think like a business analyst—moving beyond just reporting data to identifying trends, uncovering opportunities, and recommending strategic actions that drive growth and efficiency.
+
+<h2>Project Overview</h2>
+
+<p>
+This project analyzes a complete Spotify user's music streaming history to uncover listening behavior patterns, 
+identify top-performing artists, understand track engagement, and evaluate user playback habits over time.
+</p>
+
+<p>
+The objective of this analysis was to transform raw streaming data into actionable behavioral insights 
+by understanding music consumption trends, track preferences, skip behavior, and overall listening patterns.
+</p>
+
 </div>
-</section>
-
-<section id="skills">
-<h2>Skills</h2>
-<div class="card skills">
-<div class="skill">Data Analysis</div>
-<div class="skill">Business Analysis</div>
-<div class="skill">Exploratory Data Analysis</div>
-<div class="skill">KPI Development</div>
-<div class="skill">Data Modeling</div>
-<div class="skill">KPI Design</div>
-<div class="skill">Data Storytelling</div>
 </div>
-</section>
-
-<section id="tools">
-<h2>Tools</h2>
-<div class="card tools">
-<div class="tool">Excel</div>
-<div class="tool">Power BI</div>
-<div class="tool">SQL</div>
-<div class="tool">DAX</div>
-<div class="tool">Microsoft Word</div>
-</div>
-</section>
-
-<section id="domains">
-<h2>Domains</h2>
-<div class="card domains">
-<div class="domain">Business Analytics</div>
-<div class="domain">Healthcare Analytics</div>
-<div class="domain">Crypto Analytics</div>
-</div>
-</section>
-
-<section id="domains">
-<h2>Domains</h2>
-<div class="card domains">
-<div class="domain">Business Analytics</div>
-<div class="domain">Healthcare Analytics</div>
-<div class="domain">Crypto Analytics</div>
-</div>
-</section>
 
 
-<section id="Case Studies">
-<h2>Projects</h2>
-
-<div class="grid">
-
+<div class="section">
 <div class="card">
-<h3>Spotify User Analytics</h3>
-<p>Analyzed engagement, skip behavior, and listening patterns to understand user retention drivers.</p>
-<img src="spotify-dashboard.png">
-<a class="btn" href="spotify.html">View Case Study</a>
+
+<h2>Dataset Overview</h2>
+
+<p>
+The dataset contains detailed Spotify streaming history including user playback activity and behavioral interaction data.
+</p>
+
+<ul>
+<li>Playback Timestamps</li>
+<li>Track Names</li>
+<li>Artist Names</li>
+<li>Album Names</li>
+<li>Platform Used</li>
+<li>Playback Duration</li>
+<li>Playback Start Reasons</li>
+<li>Playback End Reasons</li>
+<li>Shuffle Mode</li>
+<li>Track Skip Behavior</li>
+</ul>
+
+</div>
 </div>
 
+
+<div class="section">
 <div class="card">
-<h3>Healthcare Cost Analysis</h3>
-<p>Studied global healthcare spending disparities across income groups and regions.</p>
-<img src="healthcare.png">
-<a class="btn" href="healthcare.html">View Case Study</a>
+
+<h2>Data Cleaning & Transformation</h2>
+
+<p>
+Before analysis, several data preparation steps were performed to ensure consistency and improve analytical accuracy.
+</p>
+
+<ul>
+<li>Corrected data types for Track Name, Artist Name, and Album Name columns.</li>
+
+<li>Converted playback duration from milliseconds into seconds and minutes for time-based analysis.</li>
+
+<li>Split timestamp column into separate Date and Time columns to improve temporal analysis.</li>
+
+<li> Verified and standardized data types across all fields.</li>
+
+<li>Prepared dataset for dashboard visualization and trend analysis.</li>
+</ul>
+
+</div>
 </div>
 
+
+<div class="section">
 <div class="card">
-<h3>Insurance Risk Modeling</h3>
-<p>Identified high-risk customer segments using claims frequency and demographic factors.</p>
-<img src="insurance.png">
-<a class="btn" href="insurance.html">View Case Study</a>
+
+<h2>Key Metrics Tracked</h2>
+
+<ul>
+<li>Total Streams</li>
+<li>Total Listening Time</li>
+<li>Number of Unique Artists</li>
+<li>Number of Unique Albums</li>
+<li>Track Skip Rate</li>
+<li>Average Playback Duration</li>
+</ul>
+
+</div>
 </div>
 
+
+<div class="section">
 <div class="card">
-<h3>E-commerce Performance</h3>
-<p>Evaluated revenue drivers, discount impact, and product profitability trends.</p>
-<img src="ecommerce.png">
-<a class="btn" href="ecommerce.html">View Case Study</a>
-</div>
+
+<h2>Analysis Objectives</h2>
+
+<ul>
+<li>Identify the user’s most listened-to artists.</li>
+
+<li>Determine the most streamed albums and tracks.</li>
+
+<li>Analyze skip behavior to understand disengagement patterns.</li>
+
+<li>Identify listening preferences and behavioral patterns.</li>
+
+<li>Understand long-term music consumption habits.</li>
+</ul>
 
 </div>
-</section>
+</div>
 
-<section id="contact">
-<h2>Contact</h2>
+
+<div class="section">
 <div class="card">
-Email: ayeniadeniyi2000@gmail.com <br>
-LinkedIn: linkedin.com/in/yourprofile
-</div>
-</section>
 
-<footer>
-© 2026 Adeniyi Ayeni — Data Analytics Portfolio
-</footer>
+<h2>Key Insights</h2>
+
+<h3>Top Artists</h3>
+
+<ul>
+<li>The Beatles ranked as the most streamed artist by total tracks played.</li>
+
+<li>Other highly streamed artists included The Killers and John Mayer.</li>
+</ul>
+
+<br>
+
+<h3>Top Albums</h3>
+
+<ul>
+<li>The Beatles albums dominated the top streaming rankings.</li>
+
+<li>Past Masters emerged as one of the most played albums.</li>
+</ul>
+
+<br>
+
+<h3>Top Tracks</h3>
+
+<ul>
+<li>Most streamed songs included Ode To The Mets and In The Blood.</li>
+
+<li>These tracks showed consistently high replay frequency.</li>
+</ul>
+
+<br>
+
+<h3>Track Skip Behavior</h3>
+
+<ul>
+<li>Tracks such as Paraiso and Photograph had the highest skip frequency.</li>
+
+<li>High skip behavior suggests lower engagement or weaker listener preference.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Behavioral Analysis Findings</h2>
+
+<ul>
+<li>The listener demonstrates strong preference toward classic and alternative music genres.</li>
+
+<li>Music consumption patterns show repeated engagement with nostalgic and timeless artists.</li>
+
+<li>High replay frequency suggests emotional attachment to selected artists and albums.</li>
+
+<li>Skipped tracks highlight differences in user engagement across listening sessions.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Business Value of Analysis</h2>
+
+<p>
+Streaming platforms such as Spotify can use this type of behavioral analysis to improve recommendation systems, understand content engagement patterns, reduce skip rates, and personalize user experiences more effectively.
+</p>
+
+<p>
+Understanding listening behavior allows music platforms to optimize content delivery and improve user retention strategies.
+</p>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Tools Used</h2>
+
+<ul>
+<li>Microsoft Excel — Initial data cleaning and preparation.</li>
+
+<li>Power BI — Data transformation, analysis, and dashboard development.</li>
+
+<li>Figma — Dashboard background and UI design.</li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="section">
+<div class="card">
+
+<h2>Conclusion</h2>
+
+<p>
+This project revealed clear music consumption patterns, showing the user’s strong connection to classic artists and repeat listening behavior. The analysis demonstrates how streaming data can be transformed into meaningful behavioral insights that help understand user engagement and support better recommendation systems.
+</p>
+
+</div>
+</div>
+<h2>Dashboard Preview</h2>
+
+<img src="NYKAA E-Commerce.jpg"
+     alt="Nykaa Dashboard"
+     class="dashboard">
+
+<a class="btn"
+href="https://app.powerbi.com/view?r=eyJrIjoiOGFkNmE4YzgtZTk0My00YjAyLTk2NzAtZWRjODU5M2M2ODEzIiwidCI6IjY1NWVhNmI4LWVjMjYtNDE0OC1iYjU2LTE0MThhYjc4MmZjYyJ9"
+target="_blank">
+View Interactive Power BI Dashboard
+</a>
+
+</div>
+</div>
+
+</div>
 
 </body>
 </html>
